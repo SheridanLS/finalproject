@@ -1,0 +1,24 @@
+#NEXUS
+[ID: 8742459146]
+[This file contains the trees that were found during the MCMC
+search, sorted by posterior probability. "p" indicates the
+posterior probability of the tree whereas "P" indicates the
+cumulative posterior probability.]
+
+begin trees;
+   translate
+    1 Brachionus,
+    2 Enchytraeus,
+    3 Stylaria,
+    4 Stenostomum,
+    5 Gordius,
+    6 Macrobiotus,
+    7 MilnesiumTardigradum,
+    8 Aurelia,
+    9 TrichinellaSpiralis,
+   10 EuperipatoidesLeuckarti;
+   tree tree_1 [p = 0.691, P = 0.691] = [&W 0.690775] ((((10,(7,6)),(9,5)),(8,4)),(2,3),1);
+   tree tree_2 [p = 0.250, P = 0.941] = [&W 0.250167] (((10,(7,6)),(9,5)),((8,4),(2,3)),1);
+   tree tree_3 [p = 0.054, P = 0.995] = [&W 0.054326] ((8,4),(((10,(7,6)),(9,5)),(2,3)),1);
+   tree tree_4 [p = 0.005, P = 1.000] = [&W 0.004733] (8,(((10,(7,6)),(9,5)),(4,(2,3))),1);
+end;
