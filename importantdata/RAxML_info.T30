@@ -1,0 +1,72 @@
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+
+This is RAxML version 8.2.9 released by Alexandros Stamatakis on July 20 2016.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 645 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 17.27%
+
+RAxML rapid hill-climbing mode
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+Executing 1 inferences on the original alignment using 1 distinct randomized MP trees
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heteorgeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 645
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-PTHREADS-SSE3 -T2 -p 12345 -o Aurelia -m GTRGAMMA -s fpseqs.aln -n T30 
+
+
+Partition: 0 with name: No Name Provided
+Base frequencies: 0.256 0.219 0.271 0.254 
+
+Inference[0]: Time 0.913877 GAMMA-based likelihood -10225.429414, best rearrangement setting 5
+alpha[0]: 0.298245 rates[0] ac ag at cg ct gt: 0.846096 1.836642 0.976840 0.663115 4.092047 1.000000 
+
+
+Conducting final model optimizations on all 1 trees under GAMMA-based models ....
+
+Inference[0] final GAMMA-based Likelihood: -10225.427036 tree written to file /home/sls23/finalproject/RAxML_result.T30
+
+
+Starting final GAMMA-based thorough Optimization on tree 0 likelihood -10225.427036 .... 
+
+Final GAMMA-based Score of best tree -10225.427036
+
+Program execution info written to /home/sls23/finalproject/RAxML_info.T30
+Best-scoring ML tree written to: /home/sls23/finalproject/RAxML_bestTree.T30
+
+Overall execution time: 1.115955 secs or 0.000310 hours or 0.000013 days
+

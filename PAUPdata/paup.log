@@ -1,0 +1,332 @@
+
+P A U P *
+Version 4.0a (build 161) for Unix/Linux (built on Mar 29 2018 at 14:55:07)
+Wed Apr 11 17:34:20 2018
+
+        -----------------------------NOTICE-----------------------------
+          This is an alpha-test version that is still changing rapidly.
+          It will expire on 1 Jul 2018.
+        
+          Please report bugs to dave@phylosolutions.com
+        ----------------------------------------------------------------
+
+
+paup> AllTrees
+
+Exhaustive search settings:
+  Optimality criterion = parsimony
+    Character-status summary:
+      Of 2241 total characters:
+        All characters are of type 'unord'
+        All characters have equal weight
+        1462 characters are constant (proportion = 0.652387)
+        335 variable characters are parsimony-uninformative
+        Number of parsimony-informative characters = 444
+    Gaps are treated as "missing"
+    Multistate taxa interpreted as uncertainty
+  Initial 'Maxtrees' setting = 100
+  Branches collapsed (creating polytomies) if maximum branch length is zero
+  'MulTrees' option in effect
+  No topological constraints in effect
+  Trees are unrooted
+
+Exhaustive search completed:
+  Number of trees evaluated = 2027025
+  Score of best tree found = 1725
+  Score of worst tree found = 2026
+  Number of trees retained = 1
+  Time used = 1.63 sec (CPU time = 1.63 sec)
+
+Frequency distribution of tree scores:
+
+1725.000 /---------------------------------------------------------------------------------
+1740.050 | (29)
+1755.100 | (227)
+1770.150 | (993)
+1785.200 |# (2618)
+1800.250 |# (4962)
+1815.300 |## (8611)
+1830.350 |### (16031)
+1845.400 |####### (31951)
+1860.450 |############ (56555)
+1875.500 |################# (81175)
+1890.550 |##################### (100013)
+1905.600 |####################### (111976)
+1920.650 |################################ (157571)
+1935.700 |##################################################### (256565)
+1950.750 |########################################################################## (359594)
+1965.800 |################################################################################# (394741)
+1980.850 |############################################################ (292659)
+1995.900 |########################## (124653)
+2010.950 |##### (24692)
+2026.000 | (1409)
+         \---------------------------------------------------------------------------------
+
+paup> BandB
+
+Branch-and-bound search settings:
+  Optimality criterion = parsimony
+    Character-status summary:
+      Of 2241 total characters:
+        All characters are of type 'unord'
+        All characters have equal weight
+        1462 characters are constant (proportion = 0.652387)
+        335 variable characters are parsimony-uninformative
+        Number of parsimony-informative characters = 444
+    Gaps are treated as "missing"
+    Multistate taxa interpreted as uncertainty
+  Initial upper bound: unknown (compute heuristically)
+  Addition sequence: furthest
+  Initial 'Maxtrees' setting = 100
+  Branches collapsed (creating polytomies) if maximum branch length is zero
+  'MulTrees' option in effect
+  No topological constraints in effect
+  Trees are unrooted
+
+Branch-and-bound search completed:
+  Score of best tree found = 1725
+  Number of trees retained = 1
+  Time used = 0.31 sec (CPU time = 0.31 sec)
+
+paup> hsearch ?
+
+Usage: HSearch [options...] ;
+
+Available options:
+
+Keyword ------- Option type -------------------------------------- Current setting -----------------
+swap            none|NNI|SPR|TBR                                   TBR
+keep            <real-value>|No                                    No
+mulTrees        no|yes                                             yes
+writeCurTree    no|yes                                             no
+enforce         no|yes                                             no
+constraints     <constraint-name>                                  (none)
+converse        no|yes                                             no
+reconLimit      <integer-value>|infinity                           8
+nchuck          <integer-value>                                    0
+chuckScore      <real-value>|No                                    No
+start           stepwise|NJ|current|<tree-number>[-<tree-number>] *Stepwise
+addSeq          simple|closest|asIs|random|furthest                simple
+nreps           <integer-value>                                    10
+rseed           <int> or <int:int:int:int>                         0
+rstatus         no|yes                                             no
+saveReps        no|yes                                             no
+refTax          <integer-value>                                    0
+hold            <integer-value>|No                                 1
+nbest           <integer-value>|all                                all
+allSwap         no|yes                                             no
+useNonMin       no|yes                                             no
+steepest        no|yes                                             no
+abortRep        no|yes                                             no
+retain          no|yes                                            *no
+statusWin       no|yes                                             yes
+dStatus         <integer-value>|none                               60
+randomize       addSeq|trees                                       addSeq
+timeLimit       <integer-value>|none                               none
+rearrLimit      <integer-value>|none                               none
+limitPerRep     no|yes                                             no
+                                                 *Option is nonpersistent
+
+paup> edit seqs.nxs
+
+paup> outgroup 8
+
+Outgroup status changed:
+  1 taxon transferred to outgroup
+  Total number of taxa now in outgroup = 1
+  Number of ingroup taxa = 9
+
+paup> AllTrees
+
+Exhaustive search settings:
+  Optimality criterion = parsimony
+    Character-status summary:
+      Of 2241 total characters:
+        All characters are of type 'unord'
+        All characters have equal weight
+        1462 characters are constant (proportion = 0.652387)
+        335 variable characters are parsimony-uninformative
+        Number of parsimony-informative characters = 444
+    Gaps are treated as "missing"
+    Multistate taxa interpreted as uncertainty
+  Initial 'Maxtrees' setting = 100
+  Branches collapsed (creating polytomies) if maximum branch length is zero
+  'MulTrees' option in effect
+  No topological constraints in effect
+  Trees are unrooted
+
+Exhaustive search completed:
+  Number of trees evaluated = 2027025
+  Score of best tree found = 1725
+  Score of worst tree found = 2026
+  Number of trees retained = 1
+  Time used = 1.83 sec (CPU time = 1.82 sec)
+
+Frequency distribution of tree scores:
+
+1725.000 /---------------------------------------------------------------------------------
+1740.050 | (29)
+1755.100 | (227)
+1770.150 | (993)
+1785.200 |# (2618)
+1800.250 |# (4962)
+1815.300 |## (8611)
+1830.350 |### (16031)
+1845.400 |####### (31951)
+1860.450 |############ (56555)
+1875.500 |################# (81175)
+1890.550 |##################### (100013)
+1905.600 |####################### (111976)
+1920.650 |################################ (157571)
+1935.700 |##################################################### (256565)
+1950.750 |########################################################################## (359594)
+1965.800 |################################################################################# (394741)
+1980.850 |############################################################ (292659)
+1995.900 |########################## (124653)
+2010.950 |##### (24692)
+2026.000 | (1409)
+         \---------------------------------------------------------------------------------
+
+paup> BandB
+
+Branch-and-bound search settings:
+  Optimality criterion = parsimony
+    Character-status summary:
+      Of 2241 total characters:
+        All characters are of type 'unord'
+        All characters have equal weight
+        1462 characters are constant (proportion = 0.652387)
+        335 variable characters are parsimony-uninformative
+        Number of parsimony-informative characters = 444
+    Gaps are treated as "missing"
+    Multistate taxa interpreted as uncertainty
+  Initial upper bound: unknown (compute heuristically)
+  Addition sequence: furthest
+  Initial 'Maxtrees' setting = 100
+  Branches collapsed (creating polytomies) if maximum branch length is zero
+  'MulTrees' option in effect
+  No topological constraints in effect
+  Trees are unrooted
+
+Branch-and-bound search completed:
+  Score of best tree found = 1725
+  Number of trees retained = 1
+  Time used = 0.31 sec (CPU time = 0.31 sec)
+
+paup> BandB
+
+Branch-and-bound search settings:
+  Optimality criterion = parsimony
+    Character-status summary:
+      Of 2241 total characters:
+        All characters are of type 'unord'
+        All characters have equal weight
+        1462 characters are constant (proportion = 0.652387)
+        335 variable characters are parsimony-uninformative
+        Number of parsimony-informative characters = 444
+    Gaps are treated as "missing"
+    Multistate taxa interpreted as uncertainty
+  Initial upper bound: unknown (compute heuristically)
+  Addition sequence: furthest
+  Initial 'Maxtrees' setting = 100
+  Branches collapsed (creating polytomies) if maximum branch length is zero
+  'MulTrees' option in effect
+  No topological constraints in effect
+  Trees are unrooted
+
+Branch-and-bound search completed:
+  Score of best tree found = 1725
+  Number of trees retained = 1
+  Time used = 0.31 sec (CPU time = 0.31 sec)
+
+paup> hsearch start=stepwise addseq=random nreps=1000 swap=TBR
+
+Heuristic search settings:
+  Optimality criterion = parsimony
+    Character-status summary:
+      Of 2241 total characters:
+        All characters are of type 'unord'
+        All characters have equal weight
+        1462 characters are constant (proportion = 0.652387)
+        335 variable characters are parsimony-uninformative
+        Number of parsimony-informative characters = 444
+    Gaps are treated as "missing"
+    Multistate taxa interpreted as uncertainty
+  Starting tree(s) obtained via stepwise addition
+    Addition sequence: random
+    Number of replicates = 1000
+    Starting seed = generated automatically
+    Number of trees held at each step = 1
+  Branch-swapping algorithm: tree-bisection-reconnection (TBR) with reconnection limit = 8
+    Steepest descent option not in effect
+  Initial 'Maxtrees' setting = 100
+  Branches collapsed (creating polytomies) if maximum branch length is zero
+  'MulTrees' option in effect
+  No topological constraints in effect
+  Trees are unrooted
+
+Heuristic search completed
+  Total number of rearrangements tried = 285921
+  Score of best tree(s) found = 1725
+  Number of trees retained = 1
+  Time used = 0.44 sec (CPU time = 0.45 sec)
+
+Tree-island profile:
+                     First      Last                        First    Times
+Island      Size      tree      tree           Score    replicate      hit
+--------------------------------------------------------------------------
+     1         1         1         1            1725            1    1000
+
+paup> contree
+
+Strict consensus of 1 tree:
+
+                     /------------------------------------------------------ Brachionus
+                     |
+                     |                                          /----------- Enchytraeus
+           /---------+          /-------------------------------+
+           |         |          |                               \----------- Stylaria
+           |         |          |
+           |         \----------+                               /----------- Gordius
+           |                    |          /--------------------+
+           |                    |          |                    \----------- TrichinellaSpiralis
+           |                    |          |
+/----------+                    \----------+                    /----------- Macrobiotus
+|          |                               |          /---------+
+|          |                               |          |         \----------- MilnesiumTardigradum
+|          |                               \----------+
+|          |                                          \--------------------- EuperipatoidesLeuckarti
+|          |
+|          \---------------------------------------------------------------- Stenostomum
+|
+\--------------------------------------------------------------------------- Aurelia
+
+paup> contree
+
+Strict consensus of 1 tree:
+
+                                          /--------------------------------------------------------------------------------------------------------- Brachionus
+                                          |
+                                          |                                                                                   /--------------------- Enchytraeus
+                     /--------------------+                    /--------------------------------------------------------------+
+                     |                    |                    |                                                              \--------------------- Stylaria
+                     |                    |                    |
+                     |                    \--------------------+                                                              /--------------------- Gordius
+                     |                                         |                    /-----------------------------------------+
+                     |                                         |                    |                                         \--------------------- TrichinellaSpiralis
+                     |                                         |                    |
+/--------------------+                                         \--------------------+                                         /--------------------- Macrobiotus
+|                    |                                                              |                    /--------------------+
+|                    |                                                              |                    |                    \--------------------- MilnesiumTardigradum
+|                    |                                                              \--------------------+
+|                    |                                                                                   \------------------------------------------ EuperipatoidesLeuckarti
+|                    |
+|                    \------------------------------------------------------------------------------------------------------------------------------ Stenostomum
+|
+\--------------------------------------------------------------------------------------------------------------------------------------------------- Aurelia
+
+paup> savetree file=hsearch.tre brlen=yes
+
+1 tree saved to file "~/finalproject/hsearch.tre"
+
+paup> quit

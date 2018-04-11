@@ -1,0 +1,49 @@
+#NEXUS 
+
+Begin trees;  [Treefile saved Wed Apr 11 17:47:15 2018]
+[!
+>Data file = seqs.nxs
+>Heuristic search settings:
+>  Optimality criterion = parsimony
+>    Character-status summary:
+>      Of 2241 total characters:
+>        All characters are of type 'unord'
+>        All characters have equal weight
+>        1462 characters are constant (proportion = 0.652387)
+>        335 variable characters are parsimony-uninformative
+>        Number of parsimony-informative characters = 444
+>    Gaps are treated as "missing"
+>    Multistate taxa interpreted as uncertainty
+>  Starting tree(s) obtained via stepwise addition
+>    Addition sequence: random
+>    Number of replicates = 1000
+>    Starting seed = generated automatically
+>    Number of trees held at each step = 1
+>  Branch-swapping algorithm: tree-bisection-reconnection (TBR) with reconnection limit = 8
+>    Steepest descent option not in effect
+>  Initial 'Maxtrees' setting = 100
+>  Branches collapsed (creating polytomies) if maximum branch length is zero
+>  'MulTrees' option in effect
+>  No topological constraints in effect
+>  Trees are unrooted
+>
+>Heuristic search completed
+>  Total number of rearrangements tried = 285921
+>  Score of best tree(s) found = 1725
+>  Number of trees retained = 1
+>  Time used = 0.44 sec (CPU time = 0.45 sec)
+]
+	Translate
+		1 Brachionus,
+		2 Enchytraeus,
+		3 Stylaria,
+		4 Stenostomum,
+		5 Gordius,
+		6 Macrobiotus,
+		7 MilnesiumTardigradum,
+		8 Aurelia,
+		9 TrichinellaSpiralis,
+		10 EuperipatoidesLeuckarti
+		;
+tree 'PAUP_1' = [&U] (((1:111,((2:56,3:41):63,((5:111,9:213):75,((6:94,7:95):96,10:175):68):62):37):68,4:115):116,8:129);
+End;
