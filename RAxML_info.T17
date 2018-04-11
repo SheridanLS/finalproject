@@ -24,11 +24,11 @@ RAxML consensus tree computation
 
 RAxML was called as follows:
 
-raxmlHPC-PTHREADS-SSE3 -T2 -m GTRCAT -J MR -z raxmlbs100 -n T17 
+raxmlHPC-PTHREADS-SSE3 -T2 -m GTRCAT -J MR -z RAxML_bootstrap.T133 -n T17 
 
 
 
 
-Found 100 trees in File raxmlbs100
+Found 100 trees in File RAxML_bootstrap.T133
 
 RAxML Majority Rule consensus tree written to file: /home/sls23/finalproject/RAxML_MajorityRuleConsensusTree.T17
